@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "email": "pippo@pluto.it",
+      "password": "$2a$10$aGnHgeLS4hd5nQgNuNNYQu1SsJubxZcRVy4.exkJGLUqONOx.ORFG",
+      "id": 1
+    },
+    {
+      "email": "werwer@dsfsdf.ff",
+      "password": "$2a$10$N9bYziwlTwcVgANP4TWKYuD8H9XVrGyneCzsxeAnGQsdTnr7tXZ3q",
+      "id": 2
+    },
+    {
+      "email": "werwer@wer.wer",
+      "password": "$2a$10$JRb0NxXA7CTA37NxR7CH3exWmiUUkVF8Mqm54ag0csV5KTSirPIv6",
+      "id": 3
+    },
+    {
+      "email": "qweqweqwe@xn--we-12t.qwe",
+      "password": "$2a$10$rBEStRxsb1hoBEj6IeHMvOBpFtzkokWc3ru8ESawft.cHXATnNc.G",
+      "id": 4
+    },
+    {
+      "email": "rwerwer@wer.wer",
+      "password": "$2a$10$8Bzw1JpsSDKUatgseKQ3q.ExaNjgPxTqpG.ohRHI8AKjnBh3S133S",
+      "id": 5
+    },
+    {
+      "email": "qrwerwer@wer.wer",
+      "password": "$2a$10$g1/3EA0dJMB1tkL4rwhiPuQ6WKx6IThRQ5Lzw3j2v7hKZJR2/RRDu",
+      "id": 6
+    },
+    {
+      "email": "alessandro.brugioni@gmail.com",
+      "password": "$2a$10$5rxqZfFInvyHf3nEPpdd/O4mSF5cQzn.SKGnEtBsVt256fsQ.QtbK",
+      "id": 7
+    }
+  ]
+}
