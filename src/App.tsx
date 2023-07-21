@@ -4,15 +4,24 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import Dashboard from './pages/Dashboard'
 import RequireAuth from './components/RequireAuth'
+import { useAuth } from './hooks/useAuth'
 
 function App() {
+
+  const { state } = useAuth();
 
   return (
     <>
       <nav>
-        <NavLink to="/">Login</NavLink> | 
-        <NavLink to="/register">Register</NavLink> |
-        <NavLink to="/dashboard">Dashboard</NavLink>
+        {
+          state.isLoggedIn ?
+            <NavLink to="/dashboard">Dashboard</NavLink>
+          :
+          <>
+            <NavLink to="/">Login</NavLink> | 
+            <NavLink to="/register">Register</NavLink>
+          </>
+        }
       </nav>
       
       <Routes>

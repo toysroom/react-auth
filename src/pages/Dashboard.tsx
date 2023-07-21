@@ -4,7 +4,6 @@ import { useAuth } from "../hooks/useAuth";
 const Dashboard = () => {
 
     const {state, actions} = useAuth();
-    console.log(state, actions);
 
     const navigate = useNavigate();
 
@@ -18,7 +17,7 @@ const Dashboard = () => {
     return (
         <>
             <h1>Dashboard</h1>
-            <span>User is { state.isLoggedIn ? 'logged in' : 'logged out' }</span>
+            <span>User ({state.authUser}) is { state.isLoggedIn ? 'logged in' : 'logged out' }</span>
             
             {
                 state.isLoggedIn && <p><button onClick={ logout }>Logout</button></p>

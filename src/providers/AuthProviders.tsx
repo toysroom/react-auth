@@ -10,7 +10,8 @@ export const AuthProvider = ( {children}: any ) => {
 
     useEffect( () => {
         if (localStorage.getItem('accessToken')) {
-            setAuthUser('pippo');
+            const user = JSON.parse(localStorage.getItem('user') || '');
+            setAuthUser(user.email);
             setIsLoggedIn(true);
         }
     }, []);

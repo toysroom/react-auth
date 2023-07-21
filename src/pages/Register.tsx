@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Register = () => {
 
     const navigate = useNavigate();
+    const {actions} = useAuth();
     
     const [userRegister, setUserRegister] = useState({
         email: '', password: ''
@@ -44,6 +45,10 @@ const Register = () => {
         console.log(response);
 
         localStorage.setItem('accessToken', response.data.accessToken);
+        localStorage.setItem('user', JSON.stringify(response.data.user));
+
+        actions.setIsLoggedIn(true);
+        actions.setAuthUser(response.data.user.email);
 
         navigate('/dashboard');
        

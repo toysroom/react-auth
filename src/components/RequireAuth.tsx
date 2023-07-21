@@ -4,10 +4,8 @@ import { useAuth } from "../hooks/useAuth";
 const RequireAuth = ( {children}: any) => {
     
     const {state} = useAuth();
-
     console.log(state);
-
-    if (!state.authUser) {
+    if (!state.isLoggedIn) {
         return <Navigate to = "/" replace />
     }
 

@@ -29,8 +29,10 @@ const Login = () => {
         console.log(response);
 
         localStorage.setItem('accessToken', response.data.accessToken);
+        localStorage.setItem('user', JSON.stringify(response.data.user));
+        
         actions.setIsLoggedIn(true);
-        actions.setAuthUser('pippo');
+        actions.setAuthUser(response.data.user.email);
 
         navigate('/dashboard');
     }
